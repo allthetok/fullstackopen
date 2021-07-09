@@ -6,8 +6,8 @@ const Persons = ({newSearch, persons, filteredPersons}) => {
         <ul>
         {
           newSearch === ""
-          ? persons.map(person => <Person key={person.name} person={person} />)
-          : filteredPersons.map(person => <Person key={person.name} person={person} />)
+          ? persons.map(person => <Person key={person.id} person={person} />)
+          : filteredPersons.map(person => <Person key={person.id} person={person} />)
         }
       </ul>
     )
